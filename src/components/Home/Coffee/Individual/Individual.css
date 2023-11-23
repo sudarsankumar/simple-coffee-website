@@ -1,0 +1,67 @@
+.individual {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
+.individual .image img {
+    border-radius: 1rem;
+    width: 100%;
+    object-fit: cover;
+}
+.individual .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.individual .content .base-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.individual .content .base-details .name{
+    color: #FEF7EE;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.individual .content .base-details .price{
+    color: #111315;
+    font-weight: 600;
+    background-color: #BEE3CC;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+}
+.individual .rating .star svg{
+    transform: scale(1.2);
+}
+.individual .additional-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.individual .rating, .individual .rating .rating-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+}
+.individual .rating .rating-content .rating-value {
+    color: #FEF7EE;
+    font-weight: 600;
+}
+.individual .rating .rating-content .votes {
+    color: #6F757C;
+    font-weight: 600;
+}
+.sold-out {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ED735D;
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat&display=swap');
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1B1D1F;
+    padding: 2rem;
+    font-family: 'DM Sans', sans-serif;;
+    border-radius: 1rem;
+    width: 80%;
+    margin: auto;
+    margin: 10% 0;
+}
+.container .top {
+    padding: 2rem 0;
+    background: url('../../../assets/vector.svg') no-repeat center top;
+    background-position: top 0px left 70%;
+    background-size: contain;
+}
+.container .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #FEF7EE;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.container .description {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 150%;
+    color: #6F757C;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.container .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    color: #FEF7EE;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.container .bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3em;
+    grid-column-gap: 2rem;
+}
+.container .mid-text {
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+.container .mid-text:hover {
+    cursor: pointer;
+}
+.container .active {
+    background: #6F757C;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+@media (max-width: 1024px) {
+    .container .bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container .description {
+        width: 60%;
+    }
+}
+@media (max-width: 640px) {
+    .container {
+        padding: unset;
+        width: 75%;
+        margin-top: 10%;
+    }
+    .container .bottom {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+    .container .description {
+        width: 80%;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}

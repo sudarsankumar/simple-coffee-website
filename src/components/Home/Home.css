@@ -1,0 +1,16 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #111315;
+    background-image: url('../../assets/bg-cafe.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+}
+@media (max-width: 640px) {
+    .home {
+        background-size: 100% 200px;
+    }
+}
